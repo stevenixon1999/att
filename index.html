@@ -5,11 +5,70 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alphy tours and travels</title>
+  <link rel="icon" href="./assets/images/favicon.ico">
   <link rel="stylesheet" href="./assets/css/base.css">
+  <link rel="stylesheet" href="./assets/css/home.css">
 </head>
 
 <body>
-  <h1>Hello World</h1>
+  <div class="container">
+    <header>
+      <nav>
+        <div class="logo-wrap">
+          <img src="./assets/images/alphy_logo.png" alt="Logo for Alphy tours and travels">
+        </div>
+
+      </nav>
+    </header>
+  </div>
+  <main>
+    <section class="banner">
+      <div class="banner-bg"></div>
+      <div class="container">
+        <div class="left-wrap">
+          <h1 class="title">Heading Content For 1 to 2 Line Jus Like this</h1>
+          <p class="desc">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus aliquid porro repudiandae commodi
+            asperiores incidunt expedita officiis iusto con
+          </p>
+        </div>
+        <div class="right-wrap">
+          <div class="form-bg"></div>
+          <div class="form-wrap">
+            <p class="title">Book Now</p>
+            <p class="desc">Book your car by filling this form:</p>
+            <form name="contact" method="POST" netlify>
+              <p class="field-block">
+                <label>
+                  <span>Please enter your Name</span>
+                  <input type="text" name="name" required class="form__input" />
+                </label>
+              </p>
+              <p class="field-block">
+                <label>
+                  <span>Please enter your Email</span>
+                  <input type="email" name="email" required class="form__input" />
+                </label>
+              </p>
+              <p class="field-block">
+                <label>
+                  <span>Please Enter your Phone Number</span>
+                  <input type="text" pattern="[6789][0-9]{9}" required class="form__input">
+
+                </label>
+              </p>
+              <button class="submit_button" type="submit">Submit Now</button>
+            </form>
+          </div>
+
+
+        </div>
+      </div>
+
+    </section>
+  </main>
+  <footer></footer>
+
   <script src="./assets/js/index.js"></script>
 </body>
 

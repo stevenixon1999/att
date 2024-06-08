@@ -1,0 +1,145 @@
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav .logo-wrap {
+  max-width: 320px;
+}
+
+header nav button {
+  width: 200px;
+  height: 55px;
+  padding: 10px;
+  background: #529471;
+  color: #e5f1e3;
+  border-radius: 50px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.banner {
+  min-height: 710px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.banner-bg {
+  z-index: 0;
+  background-image: linear-gradient(
+      105deg,
+      rgba(255, 255, 255, 0.9) 0%,
+      rgba(255, 255, 255, 0.9) 50%,
+      transparent 65%
+    ),
+    url("./../images/banner_image.jpg");
+  filter: blur(2px);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.banner .container {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  padding: 40px 16px;
+}
+.banner .left-wrap .title {
+  max-width: 615px;
+  font-family: "inter-bold", Arial, Helvetica, sans-serif;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.banner .left-wrap .desc {
+  max-width: 715px;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.banner .right-wrap {
+  width: 100%;
+  max-width: 500px;
+  height: 500px;
+  position: relative;
+  border-radius: 20px;
+  margin-left: auto;
+  overflow: hidden;
+}
+.banner .right-wrap .form-bg {
+  z-index: 0;
+  background: #fff;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.2s ease;
+}
+.banner .right-wrap:hover .form-bg {
+  opacity: 1;
+}
+
+.banner .right-wrap .form-wrap {
+  z-index: 1;
+  position: relative;
+  padding: 20px;
+}
+.banner .right-wrap .title {
+  font-family: "inter-bold", Arial, Helvetica, sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 5px;
+}
+
+.banner .right-wrap .desc {
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+.banner .right-wrap .field-block {
+  margin-bottom: 30px;
+}
+.banner .right-wrap .field-block label {
+  font-size: 16px;
+  line-height: 1.1;
+  color: #000;
+}
+.form__input {
+  font-size: 1.5rem;
+  padding: 1.5rem 2rem;
+  border-radius: 5px;
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 100%;
+  display: block;
+  background: #efefef;
+  transition: all 0.5s ease-out;
+}
+.form__input:focus {
+  outline: none;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid #529471;
+  background: #efefef;
+}
+.form__input:focus:invalid {
+  border-bottom: 3px solid red;
+}
+.banner .form-wrap .submit_button {
+  width: 100%;
+  padding: 10px;
+  font-size: 28px;
+  border-radius: 50px;
+  background: #529471;
+  color: #fff;
+}
