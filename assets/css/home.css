@@ -1,3 +1,24 @@
+/* common */
+.section {
+  margin: 60px 0;
+}
+.section .heading {
+  font-size: 54px;
+  line-height: 1.5;
+  font-weight: 700;
+  font-family: "inter-bold", Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 0 0 10px 0;
+}
+.section .sub-heading {
+  font-size: 26px;
+  line-height: 1.2;
+  text-align: center;
+  margin: 0 0 40px 0;
+}
+/* common */
+
+/* header */
 header nav {
   display: flex;
   align-items: center;
@@ -18,7 +39,9 @@ header nav button {
   font-size: 24px;
   font-weight: 700;
 }
+/* header */
 
+/* banner */
 .banner {
   min-height: 710px;
   position: relative;
@@ -143,14 +166,88 @@ header nav button {
   background: #529471;
   color: #fff;
 }
-.services{padding: 40px 0 80px 0;}
-.services h2{font-size: 36px; line-height: 38px; text-align: center;margin: 0 0 10px 0;}
-.services p{font-size: 28px; line-height: 36px; text-align: center;margin: 0 0 44px 0;}
-.services ul{display: flex;align-items: center;justify-content: space-between;}
-.services ul li{font-size: 26px; line-height: 32px;text-align: center;}
+/* banner */
 
-.about .heading{font-size: 36px; line-height: 38px; text-align: center;margin: 0 0 44px 0;}
-.about .list-wrap{display: flex; margin: 0 -18px;flex-wrap: wrap;justify-content: center;}
-.about .list-wrap .list-item{flex: 1 0 auto; width: 100%; max-width: 33.3333%; display: flex; flex-direction: column; align-items: center;justify-content: space-between; padding: 0 18px;margin: 0 0 20px 0;}
+/* Features Section */
+.features .list-wrap {
+  display: flex;
+  margin: 0 -18px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.features .list-wrap .list-item {
+  flex: 1 0 auto;
+  width: 100%;
+  max-width: 33.3333%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 0 18px;
+  margin: 0 0 20px 0;
+}
 
-.about .list-wrap .list-item .desc { font-size: 18px; line-height: 28px;text-align: center; }
+.features .list-wrap .list-item .title {
+  font-size: 26px;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.features .list-wrap .list-item .desc {
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+}
+/* Features Section */
+
+/* about Section */
+.about {
+  background: #40413c;
+  padding: 80px 0;
+  color: #fff;
+  margin: 0;
+}
+.about .heading {
+  margin-bottom: 40px;
+}
+.about .content-wrap {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+.about .content-wrap .left-wrap,
+.about .content-wrap .right-wrap {
+  flex: 1 0 auto;
+  max-width: 50%;
+}
+.about .left-wrap {
+  border-radius: 20px;
+  overflow: hidden;
+}
+.about .right-wrap {
+  padding: 0 0 0 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about .right-wrap .title {
+  font-size: 36px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+.about .right-wrap .desc {
+  font-size: 26px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/* Services Section */
+
+.tns-outer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: #f3f7ec;
+}
