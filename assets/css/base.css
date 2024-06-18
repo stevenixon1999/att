@@ -173,7 +173,7 @@ body {
 body {
   font-family: "inter", Arial, Helvetica, sans-serif;
   font-weight: 400;
-  color: #2f7c72;
+  color: #000;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   height: 100%;
@@ -187,4 +187,5 @@ body {
   padding: 0 16px;
   width: 100%;
   position: relative;
+  overflow: hidden;
 }

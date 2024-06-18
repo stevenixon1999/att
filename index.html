@@ -386,37 +386,53 @@
           </ul>
         </div>
       </section>
+
       <!-- CARS -->
       <section class="cars section">
-        <h2 class="heading">Available cars</h2>
-        <p class="sub-heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi</p>
-        <div class="my-slider">
-          <div>
-            <div class="img-wrap"><img src="./assets/images/demo-car.jpg" alt="Demo Car"></div>
-            <h3>Name of Demo Car 1</h3>
+        <div class="container">
+          <h2 class="heading">These are our Available cars</h2>
+          <p class="sub-heading">A text saying that there are more cars available than shown below etc...</p>
+          <div id="controls">
+            <button id="prev" class="slider-control previous">
+              <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48"
+                  d="M328 112L184 256l144 144" />
+              </svg></button>
+            <button id="next" class="slider-control next">
+              <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48"
+                  d="M184 112l144 144-144 144" />
+              </svg></button>
           </div>
-          <div>
-            <div class="img-wrap"><img src="./assets/images/demo-car.jpg" alt="Demo Car"></div>
-            <h3>Name of Demo Car 2</h3>
-          </div>
-          <div>
-            <div class="img-wrap"><img src="./assets/images/demo-car.jpg" alt="Demo Car"></div>
-            <h3>Name of Demo Car 3</h3>
-          </div>
-          <div>
-            <div class="img-wrap"><img src="./assets/images/demo-car.jpg" alt="Demo Car"></div>
-            <h3>Name of Demo Car 4</h3>
-          </div>
-          <div>
-            <div class="img-wrap"><img src="./assets/images/demo-car.jpg" alt="Demo Car"></div>
-            <h3>Name of Demo Car 5</h3>
-          </div>
-          <div>
-            <div class="img-wrap"><img src="./assets/images/demo-car.jpg" alt="Demo Car"></div>
-            <h3>Name of Demo Car 6</h3>
+          <div class="my-slider">
+            <div class="slide">
+              <h3 class="title">Name of Demo Car 1</h3>
+              <div class="img-wrap"><img src="./assets/images/demo-car.jpg" alt="Demo Car"></div>
+            </div>
+            <div class="slide">
+              <h3 class="title">Name of Demo Car 2</h3>
+              <div class="img-wrap"><img src="./assets/images/demo-car.jpg" alt="Demo Car"></div>
+            </div>
+            <div class="slide">
+              <h3 class="title">Name of Demo Car 3</h3>
+              <div class="img-wrap"><img src="./assets/images/demo-car.jpg" alt="Demo Car"></div>
+            </div>
+            <div class="slide">
+              <h3 class="title">Name of Demo Car 4</h3>
+              <div class="img-wrap"><img src="./assets/images/demo-car.jpg" alt="Demo Car"></div>
+            </div>
+            <div class="slide">
+              <h3 class="title">Name of Demo Car 5</h3>
+              <div class="img-wrap"><img src="./assets/images/demo-car.jpg" alt="Demo Car"></div>
+            </div>
+            <div class="slide">
+              <h3 class="title">Name of Demo Car 6</h3>
+              <div class="img-wrap"><img src="./assets/images/demo-car.jpg" alt="Demo Car"></div>
+            </div>
           </div>
         </div>
       </section>
+
       <!-- About Us -->
       <section class="about section">
         <div class="container">
@@ -441,30 +457,34 @@
   <footer>
     <div class="container">
       <div class="left-wrap">
-        <div class="img-wap">
+        <div class="img-wrap">
           <img src="./assets/images/alphy_logo.png" alt="Aphy tours and Travels Logo">
         </div>
       </div>
       <div class="right-wrap">
         <ul>
           <li><a href="/privacy-policy/">Privacy Policy</a></li>
-          <li><a href="mailto:example@example.com">example@example.com</a></li>
-          <li><a href="tel:+1234567890">+1 (234) 567-890</a></li>
+          <li><a href="mailto:example@example.com">Email : example@example.com</a></li>
+          <li><a href="tel:+1234567890">Phone: +1 (234) 567-890</a></li>
         </ul>
       </div>
     </div>
+    <p class="copyright">Copyright © 2024 | Alphy tours and travels</p>
   </footer>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
   <script>
     var slider = tns({
       container: '.my-slider',
       items: 1,
-      "edgePadding": 60,
+      "edgePadding": 50,
       gutter: 10,
       slideBy: 'page',
-      autoplay: true,
+      autoplay: false,
       "mouseDrag": true,
-
+      controlsContainer: "#controls",
+      nextButton: '#prev',
+      nextButton: '#next',
     });
 
   </script>

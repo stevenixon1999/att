@@ -9,6 +9,7 @@
   font-family: "inter-bold", Arial, Helvetica, sans-serif;
   text-align: center;
   margin: 0 0 10px 0;
+  color: #2f7c72;
 }
 .section .sub-heading {
   font-size: 26px;
@@ -76,10 +77,11 @@ header nav button {
 .banner .left-wrap .title {
   max-width: 615px;
   font-family: "inter-bold", Arial, Helvetica, sans-serif;
-  font-size: 56px;
   font-weight: 700;
+  font-size: 56px;
   line-height: 1.2;
   margin-bottom: 20px;
+  color: #2f7c72;
 }
 
 .banner .left-wrap .desc {
@@ -123,6 +125,7 @@ header nav button {
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 5px;
+  color: #2f7c72;
 }
 
 .banner .right-wrap .desc {
@@ -169,6 +172,9 @@ header nav button {
 /* banner */
 
 /* Features Section */
+.features {
+  padding: 60px 0;
+}
 .features .list-wrap {
   display: flex;
   margin: 0 -18px;
@@ -189,9 +195,12 @@ header nav button {
 
 .features .list-wrap .list-item .title {
   font-size: 26px;
+  font-family: "inter-bold", Arial, Helvetica, sans-serif;
+  font-weight: 700;
   line-height: 1.2;
   text-align: center;
   margin-bottom: 10px;
+  color: #2f7c72;
 }
 .features .list-wrap .list-item .desc {
   font-size: 18px;
@@ -234,20 +243,83 @@ header nav button {
   font-size: 36px;
   line-height: 1.2;
   margin-bottom: 30px;
+  font-family: "inter-bold", Arial, Helvetica, sans-serif;
+  font-weight: 700;
 }
 .about .right-wrap .desc {
   font-size: 26px;
   line-height: 1.5;
   font-weight: 400;
 }
+/* about Section */
 
-/* Services Section */
-
-.tns-outer {
-  max-width: 800px;
+/* Cars Section */
+.cars {
+  padding: 80px 0;
+}
+.cars #controls {
+  position: relative;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: -50px;
+}
+.cars .slider-control {
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+}
+.cars .slider-control:hover {
+  border-color: #529471;
+}
+.cars .slider-control svg {
+  width: 80%;
+}
+.cars .tns-outer {
   margin: 0 auto;
 }
+.cars .slide .title {
+  font-size: 44px;
+  line-height: 1.5;
+  font-family: "inter-bold", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000;
+}
+/* Cars Section */
 
+/* Footer */
 footer {
   background-color: #f3f7ec;
+  padding: 80px 0 40px 0;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .img-wrap {
+  width: 420px;
+  margin-top: -20px;
+}
+
+footer .right-wrap li {
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+footer .right-wrap li:hover {
+  text-decoration: underline;
+}
+footer .copyright {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1;
 }
