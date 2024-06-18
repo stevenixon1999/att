@@ -9,11 +9,12 @@
   <link rel="stylesheet" href="./assets/css/base.css">
   <link rel="stylesheet" href="./assets/css/home.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 
 <body>
-  <div>
+  <div class="main-wrap">
     <div class="container">
       <header>
         <nav>
@@ -30,7 +31,7 @@
       <section class="banner">
         <div class="banner-bg"></div>
         <div class="container">
-          <div class="left-wrap">
+          <div class="left-wrap" data-aos-once="true" data-aos="fade-right">
             <h1 class="title">
               Your Reliable Partner for Seamless Car Journeys</h1>
             <p class="desc">
@@ -39,7 +40,7 @@
               with Alphy Tours and Travels!
             </p>
           </div>
-          <div class="right-wrap">
+          <div class="right-wrap" data-aos-once="true" data-aos="fade-left">
             <div class="form-bg"></div>
             <div class="form-wrap">
               <p class="title">Book Now</p>
@@ -77,10 +78,11 @@
       <!-- Features -->
       <section class="features section">
         <div class="container">
-          <h2 class="heading">Why Choose us ?</h2>
-          <p class="sub-heading">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          <h2 class="heading" data-aos-once="true" data-aos="fade-up">Why Choose us ?</h2>
+          <p class="sub-heading" data-aos-once="true" data-aos="fade-up">Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit.</p>
           <ul class="list-wrap">
-            <div class="list-item">
+            <div class="list-item" data-aos="zoom-in" data-aos-once="true">
               <div class="icon-wrap">
                 <svg width="64" height="56" viewBox="0 0 64 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -144,7 +146,7 @@
                 </p>
               </div>
             </div>
-            <div class="list-item">
+            <div class="list-item" data-aos="zoom-in" data-aos-once="true">
               <div class="icon-wrap">
                 <svg xmlns="http://www.w3.org/2000/svg" width="85" height="65" viewBox="0 0 85 65" fill="none">
                   <g clip-path="url(#clip0_10098_8533)">
@@ -193,7 +195,7 @@
                 </p>
               </div>
             </div>
-            <div class="list-item">
+            <div class="list-item" data-aos="zoom-in" data-aos-once="true">
               <div class="icon-wrap">
                 <svg width="80" height="56" viewBox="0 0 80 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0_4599_7410)">
@@ -252,7 +254,7 @@
                   through our extensive network.</p>
               </div>
             </div>
-            <div class="list-item">
+            <div class="list-item" data-aos="zoom-in" data-aos-once="true">
               <div class="icon-wrap">
                 <svg width="81" height="80" viewBox="0 0 81 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0_4599_7425)">
@@ -296,7 +298,7 @@
                 </p>
               </div>
             </div>
-            <div class="list-item">
+            <div class="list-item" data-aos="zoom-in" data-aos-once="true">
               <div class="icon-wrap">
                 <svg xmlns="http://www.w3.org/2000/svg" width="85" height="65" viewBox="0 0 85 65" fill="none">
                   <g clip-path="url(#clip0_10098_8533)">
@@ -346,7 +348,7 @@
                 </p>
               </div>
             </div>
-            <div class="list-item">
+            <div class="list-item" data-aos="zoom-in" data-aos-once="true">
               <div class="icon-wrap">
                 <svg width="81" height="80" viewBox="0 0 81 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="40.6672" cy="40" r="30.3333" stroke="#2f7c72" stroke-width="3"></circle>
@@ -390,8 +392,9 @@
       <!-- CARS -->
       <section class="cars section">
         <div class="container">
-          <h2 class="heading">These are our Available cars</h2>
-          <p class="sub-heading">A text saying that there are more cars available than shown below etc...</p>
+          <h2 class="heading" data-aos="fade-in" data-aos-once="true">These are our Available cars</h2>
+          <p class="sub-heading" data-aos="fade-in" data-aos-once="true">A text saying that there are more cars
+            available than shown below etc...</p>
           <div id="controls">
             <button id="prev" class="slider-control previous">
               <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
@@ -437,10 +440,10 @@
       <section class="about section">
         <div class="container">
           <div class="content-wrap">
-            <div class="left-wrap">
+            <div class="left-wrap" data-aos="fade-right" data-aos-once="true">
               <img loading="lazy" src="./assets/images/about.jpg" alt="About ATT">
             </div>
-            <div class="right-wrap">
+            <div class="right-wrap" data-aos="fade-left" data-aos-once="true">
               <h3 class="title">This below para describes about att</h3>
               <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, eos corrupti
                 doloremque
@@ -471,9 +474,11 @@
     </div>
     <p class="copyright">Copyright © 2024 | Alphy tours and travels</p>
   </footer>
-
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
   <script>
+    AOS.init();
+
     var slider = tns({
       container: '.my-slider',
       items: 1,
