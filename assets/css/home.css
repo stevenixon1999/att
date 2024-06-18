@@ -14,6 +14,13 @@
   text-align: center;
   margin: 0 0 40px 0;
 }
+
+@media only screen and (max-width: 1180px) {
+  .section .heading {
+    font-size: 4.4rem;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .section .heading {
     font-size: 2.6rem;
@@ -99,7 +106,7 @@ header nav button {
 .banner .left-wrap .desc {
   max-width: 632px;
   font-size: 2rem;
-  line-height: 1.2;
+  line-height: 1.7;
 }
 
 .banner .right-wrap {
@@ -181,8 +188,13 @@ header nav button {
   background: #529471;
   color: #fff;
 }
+@media only screen and (max-width: 1180px) {
+  .banner .left-wrap .title {
+    font-size: 4.4rem;
+  }
+}
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1030px) {
   .banner .container {
     padding: 20px 16px;
     flex-direction: column;
@@ -193,12 +205,11 @@ header nav button {
       url(./../images/banner.jpg);
     background-position: top;
   }
-  .banner .left-wrap .title {
-    font-size: 2.6rem;
-  }
+  .banner .left-wrap .title,
   .banner .left-wrap .desc {
-    font-size: 1.6rem;
+    text-align: center;
   }
+
   .banner .right-wrap {
     margin-left: 0;
   }
@@ -214,6 +225,15 @@ header nav button {
   }
   .banner .right-wrap .form-bg {
     opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .banner .left-wrap .title {
+    font-size: 2.6rem;
+  }
+  .banner .left-wrap .desc {
+    font-size: 1.6rem;
   }
 }
 
@@ -354,7 +374,6 @@ header nav button {
 }
 .about .content-wrap .left-wrap,
 .about .content-wrap .right-wrap {
-  flex: 1 0 auto;
   max-width: 50%;
 }
 .about .left-wrap {
@@ -362,7 +381,6 @@ header nav button {
   overflow: hidden;
 }
 .about .right-wrap {
-  padding: 0 0 0 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -379,7 +397,8 @@ header nav button {
   line-height: 1.5;
   font-weight: 400;
 }
-@media only screen and (max-width: 767px) {
+
+@media only screen and (max-width: 1080px) {
   .about {
     padding: 60px 0;
   }
@@ -387,11 +406,16 @@ header nav button {
     flex-direction: column;
   }
 
+  .about .content-wrap {
+    max-width: 800px;
+    margin: 0 auto;
+  }
   .about .content-wrap .left-wrap,
   .about .content-wrap .right-wrap {
-    flex: 1 0 auto;
+    /* flex: 1 0 auto; */
     max-width: 100%;
   }
+
   .about .right-wrap {
     padding: 0;
   }
