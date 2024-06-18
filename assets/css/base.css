@@ -157,21 +157,18 @@ html {
   scroll-padding-top: 195px;
 }
 @font-face {
-  font-family: "inter-bold";
+  font-family: "poppins-bold";
   font-weight: 700;
-  src: url("./../fonts/Inter-Bold.woff") format("woff");
+  src: url("./../fonts/Poppins-Bold.woff") format("woff");
 }
 @font-face {
-  font-family: "inter";
+  font-family: "poppins";
   font-weight: 400;
-  src: url("./../fonts/Inter-Regular.woff") format("woff");
+  src: url("./../fonts/Poppins-Regular.woff") format("woff");
 }
 
 body {
-  font-family: "MyCustomFont", sans-serif;
-}
-body {
-  font-family: "inter", Arial, Helvetica, sans-serif;
+  font-family: "poppins", Arial, Helvetica, sans-serif;
   font-weight: 400;
   color: #000;
   overflow-x: hidden;

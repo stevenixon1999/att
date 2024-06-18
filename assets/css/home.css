@@ -1,18 +1,15 @@
 /* common */
-.section {
-  margin: 60px 0;
-}
 .section .heading {
-  font-size: 54px;
-  line-height: 1.5;
+  font-size: 4.8rem;
+  line-height: 1.2;
   font-weight: 700;
-  font-family: "inter-bold", Arial, Helvetica, sans-serif;
+  font-family: "poppins-bold", Arial, Helvetica, sans-serif;
   text-align: center;
   margin: 0 0 10px 0;
   color: #2f7c72;
 }
 .section .sub-heading {
-  font-size: 26px;
+  font-size: 2rem;
   line-height: 1.2;
   text-align: center;
   margin: 0 0 40px 0;
@@ -58,8 +55,8 @@ header nav button {
       rgba(255, 255, 255, 0.9) 50%,
       transparent 65%
     ),
-    url("./../images/banner_image.jpg");
-  filter: blur(2px);
+    url("./../images/banner.jpg");
+  /* filter: blur(2px); */
   background-position: center;
   background-size: cover;
   position: absolute;
@@ -76,24 +73,24 @@ header nav button {
 }
 .banner .left-wrap .title {
   max-width: 615px;
-  font-family: "inter-bold", Arial, Helvetica, sans-serif;
+  font-family: "poppins-bold", Arial, Helvetica, sans-serif;
   font-weight: 700;
-  font-size: 56px;
+  font-size: 5.6rem;
   line-height: 1.2;
   margin-bottom: 20px;
   color: #2f7c72;
 }
 
 .banner .left-wrap .desc {
-  max-width: 715px;
-  font-size: 26px;
+  max-width: 632px;
+  font-size: 2rem;
   line-height: 1.2;
 }
 
 .banner .right-wrap {
   width: 100%;
   max-width: 500px;
-  height: 500px;
+  height: 525px;
   position: relative;
   border-radius: 20px;
   margin-left: auto;
@@ -120,7 +117,7 @@ header nav button {
   padding: 20px;
 }
 .banner .right-wrap .title {
-  font-family: "inter-bold", Arial, Helvetica, sans-serif;
+  font-family: "poppins-bold", Arial, Helvetica, sans-serif;
   font-size: 38px;
   font-weight: 700;
   line-height: 1.2;
@@ -173,7 +170,8 @@ header nav button {
 
 /* Features Section */
 .features {
-  padding: 60px 0;
+  padding: 100px 0;
+  background: #f4f8ff;
 }
 .features .list-wrap {
   display: flex;
@@ -194,8 +192,8 @@ header nav button {
 }
 
 .features .list-wrap .list-item .title {
-  font-size: 26px;
-  font-family: "inter-bold", Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  font-family: "poppins-bold", Arial, Helvetica, sans-serif;
   font-weight: 700;
   line-height: 1.2;
   text-align: center;
@@ -203,8 +201,8 @@ header nav button {
   color: #2f7c72;
 }
 .features .list-wrap .list-item .desc {
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 1.8rem;
+  line-height: 1.7;
   text-align: center;
 }
 /* Features Section */
@@ -240,14 +238,14 @@ header nav button {
   justify-content: center;
 }
 .about .right-wrap .title {
-  font-size: 36px;
+  font-size: 3.6rem;
   line-height: 1.2;
   margin-bottom: 30px;
-  font-family: "inter-bold", Arial, Helvetica, sans-serif;
+  font-family: "poppins-bold", Arial, Helvetica, sans-serif;
   font-weight: 700;
 }
 .about .right-wrap .desc {
-  font-size: 26px;
+  font-size: 1.8rem;
   line-height: 1.5;
   font-weight: 400;
 }
@@ -256,6 +254,9 @@ header nav button {
 /* Cars Section */
 .cars {
   padding: 80px 0;
+}
+.cars .container {
+  max-width: 1100px;
 }
 .cars #controls {
   position: relative;
@@ -284,9 +285,9 @@ header nav button {
   margin: 0 auto;
 }
 .cars .slide .title {
-  font-size: 44px;
+  font-size: 4.2rem;
   line-height: 1.5;
-  font-family: "inter-bold", Arial, Helvetica, sans-serif;
+  font-family: "poppins-bold", Arial, Helvetica, sans-serif;
   font-weight: 700;
   text-align: center;
   margin-bottom: 20px;
@@ -305,12 +306,12 @@ footer .container {
   align-items: center;
 }
 footer .img-wrap {
-  width: 420px;
+  width: 320px;
   margin-top: -20px;
 }
 
 footer .right-wrap li {
-  font-size: 20px;
+  font-size: 1.6rem;
   line-height: 1.2;
   margin-bottom: 10px;
 }
@@ -320,6 +321,6 @@ footer .right-wrap li:hover {
 footer .copyright {
   margin-top: 40px;
   text-align: center;
-  font-size: 18px;
+  font-size: 1.6rem;
   line-height: 1;
 }
