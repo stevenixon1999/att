@@ -39,10 +39,39 @@ header nav button {
   max-width: 800px;
   margin: 0 auto 60px auto;
 }
+.para-wrap h2 {
+  font-size: 2.4rem;
+  line-height: 1.4;
+  font-weight: 700;
+  font-family: "poppins-bold", Arial, Helvetica, sans-serif;
+  margin-bottom: 10px;
+}
+.para-wrap h3 {
+  font-size: 2rem;
+  line-height: 1.4;
+  font-weight: 700;
+  font-family: "poppins-bold", Arial, Helvetica, sans-serif;
+  margin-bottom: 5px;
+}
+.para-wrap h4 {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
 .para-wrap p {
   font-size: 1.8rem;
   line-height: 1.4;
   margin-bottom: 20px;
+  text-align: justify;
+}
+.para-wrap ul {
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+.para-wrap ul li {
+  list-style-type: disc;
+  font-size: 1.8rem;
+  line-height: 1.4;
+  margin-bottom: 5px;
   text-align: justify;
 }
 @media only screen and (max-width: 767px) {
