@@ -44,7 +44,6 @@
             <div class="form-bg"></div>
             <div class="form-wrap">
               <p class="title">Book Now</p>
-              <p class="desc">Book your car by filling this form:</p>
               <form name="contact" method="POST" netlify>
                 <p class="field-block">
                   <label>
@@ -63,6 +62,18 @@
                     <span>Please Enter your Phone Number</span>
                     <input type="text" pattern="[6789][0-9]{9}" required class="form__input">
 
+                  </label>
+                </p>
+                <p class="field-block">
+                  <label>
+                    <span>Please select Pick Date</span>
+                    <input type="date" id="pick-date" name="pick-date" required class="form__input">
+                  </label>
+                </p>
+                <p class="field-block">
+                  <label>
+                    <span>Please select Drop Date</span>
+                    <input type="date" id="drop-date" name="drop-date" required class="form__input">
                   </label>
                 </p>
                 <button class="submit_button" type="submit">Submit Now</button>
@@ -493,6 +504,7 @@
     });
 
   </script>
+  <script src="./assets/js/index.js"></script>
 </body>
 
 </html>
