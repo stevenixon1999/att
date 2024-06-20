@@ -159,6 +159,10 @@ header nav button {
   line-height: 1.1;
   color: #000;
 }
+.banner .right-wrap .field-block label span {
+  display: block;
+  margin-bottom: 6px;
+}
 .form__input {
   font-size: 1.5rem;
   padding: 1.5rem 2rem;
@@ -170,6 +174,28 @@ header nav button {
   background: #efefef;
   transition: all 0.5s ease-out;
 }
+.form-wrap .date {
+  border: none;
+  box-sizing: border-box;
+  outline: 0;
+  padding: 0.75rem;
+  position: relative;
+  width: 100%;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background: transparent;
+  bottom: 0;
+  color: transparent;
+  cursor: pointer;
+  height: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+}
+
 .form__input:focus {
   outline: none;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
