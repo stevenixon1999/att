@@ -1,4 +1,5 @@
 /* common */
+.tns-outer [aria-controls], .tns-outer [data-action]{display: none;}
 .section .heading {
   font-size: 4.8rem;
   line-height: 1.2;
@@ -357,6 +358,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .cars .tns-outer {
   margin: 0 auto;
 }
+.cars .img-wrap{max-width: 600px;margin: 0 auto;}
 .cars .slide .title {
   font-size: 4.2rem;
   line-height: 1.5;
@@ -380,6 +382,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .cars .slide .title {
     font-size: 2rem;
   }
+  .cars .tns-outer{margin: 24px auto 0 auto;}
 }
 /* Cars Section */
 
