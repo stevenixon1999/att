@@ -162,6 +162,11 @@ html {
   src: url("./../fonts/Poppins-Bold.woff") format("woff");
 }
 @font-face {
+  font-family: "poppins-medium";
+  font-weight: 500;
+  src: url("./../fonts/Poppins-Medium.woff") format("woff");
+}
+@font-face {
   font-family: "poppins";
   font-weight: 400;
   src: url("./../fonts/Poppins-Regular.woff") format("woff");

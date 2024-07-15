@@ -10,4 +10,5 @@ document.addEventListener('DOMContentLoaded', function () {
     const pickDate = pickDateInput.value;
     dropDateInput.setAttribute('min', pickDate);
   });
+
 });
