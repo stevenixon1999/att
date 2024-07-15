@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function initializeAccordion() {
-const accordionBtns = document.getElementsByClassName("accordion-button");
+const accordionBtns = document.querySelectorAll(".accordion-button");
 if (!accordionBtns.length) return;
 for (let i = 0; i < accordionBtns.length; i++) {
   accordionBtns[i].addEventListener("click", function () {
