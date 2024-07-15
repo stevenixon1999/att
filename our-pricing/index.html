@@ -8,9 +8,7 @@
   <link rel="icon" href="./../assets/images/favicon.ico">
   <link rel="stylesheet" href="./../assets/css/base.css">
   <link rel="stylesheet" href="./../assets/css/our-pricing.css">
-  <meta name="description" content="Your trusted travel companion for every trip! We provide a wide range of car services, affordable rates,
-  exceptional customer support, and a user-friendly booking system. Experience the joy of hassle-free travel
-  with Alphy Tours and Travels!">
+  <meta name="description" content="Explore our pricing plans for car rental services. Choose from various options to suit your needs.">
   <meta property="og:locale" content="en_US" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Alphy tours and travels" />
@@ -338,34 +336,7 @@
     </div>
     <p class="copyright">Copyright © 2024 | Alphy tours and travels</p>
   </footer>
-
-  <script>
-
-    document.addEventListener('DOMContentLoaded', function () {
-        initializeAccordion();
-    });
-
-    function initializeAccordion() {
-    const accordionBtns = document.getElementsByClassName("accordion-button");
-    if (!accordionBtns.length) return;
-    for (let i = 0; i < accordionBtns.length; i++) {
-      accordionBtns[i].addEventListener("click", function () {
-        const currentActiveAcc = document.querySelector(".accordion-button.active");
-        if (currentActiveAcc !== null && currentActiveAcc !== this) {
-          const currentActiveAccItem = currentActiveAcc.closest(".accordion-item");
-          const currentActiveAccBody = currentActiveAccItem.querySelector(".accordion-body");
-          currentActiveAcc.classList.remove("active");
-          currentActiveAccBody.style.maxHeight = null;
-        }
-        this.classList.toggle("active");
-        const accordionItem = this.closest(".accordion-item");
-        const accordionBody = accordionItem.querySelector(".accordion-body");
-        accordionBody.style.maxHeight = accordionBody.style.maxHeight ? null : accordionBody.scrollHeight + "px";
-      });
-    }
-  }
-
-  </script>
+  <script src="../assets/js/accordion.js"></script>
 </body>
 
 </html>
