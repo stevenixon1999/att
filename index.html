@@ -26,6 +26,9 @@
   <meta property="og:image:width" content="847" />
   <meta property="og:image:height" content="294" />
   <meta property="og:image:type" content="image/png" />
+  <style>
+   
+  </style>
 </head>
 <body>
   <div class="main-wrap">
@@ -33,8 +36,15 @@
       <header>
         <nav>
           <div class="logo-wrap">
-            <a href="https://alphytoursandtravels.com/"><img src="./assets/images/alphy_logo.png"
-                alt="Logo for Alphy tours and travels" width="847" height="294"></a>
+            <a href="https://alphytoursandtravels.com/">
+              <div class="globe-wrap">
+                <svg id="globe" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path d="M53.85 47.85A27 27 0 0 1 24 57.8V56l3-3v-4l4-4v-3l4 4h5l2-2h8z"/><path d="M42 20.59v2.56L38.07 27H31l-5.36 5.26L31 37.51v5.06L27.44 39h-4.58L16 32.11V24.2L11.8 20h-4A27 27 0 0 1 32 5a26.55 26.55 0 0 1 7.06.94L36 9h-6v4l4 4h4.33z"/><path d="M32 60a28 28 0 1 1 28-28 28 28 0 0 1-28 28zm0-54a26 26 0 1 0 26 26A26 26 0 0 0 32 6z"/></svg>
+              </div>
+              <div class="logo-content">
+                <p class="bold">ALPHY</p> 
+                <p>Tours and Travels</p>
+              </div>
+            </a>
           </div>
 
         </nav>
@@ -59,7 +69,9 @@
             <div class="form-bg"></div>
             <div class="form-wrap">
               <p class="title">Book Now</p>
-              <form name="contact" method="POST" netlify>
+              <form name="contact" action="https://api.web3forms.com/submit"  method="POST">
+                <input type="hidden" name="access_key" value="efa214eb-44ba-4cb6-8000-8f104258a607">
+               
                 <p class="field-block">
                   <label>
                     <span>Please enter your Name</span>
@@ -81,7 +93,7 @@
                 <p class="field-block">
                   <label>
                     <span>Please Enter your Phone Number</span>
-                    <input type="text" pattern="[6789][0-9]{9}" placeholder="9090909090" required class="form__input">
+                    <input type="text" name="phone-number" pattern="[6789][0-9]{9}" placeholder="9090909090" required class="form__input">
 
                   </label>
                 </p>
@@ -97,6 +109,7 @@
                     <input type="date" id="drop-date" name="drop-date" required class="date form__input">
                   </label>
                 </p>
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                 <button aria-label="Submit Now" class="submit_button" type="submit">Submit Now</button>
               </form>
             </div>
@@ -617,9 +630,16 @@
   <footer>
     <div class="container">
       <div class="left-wrap">
-        <div class="img-wrap">
-          <a href="https://alphytoursandtravels.com/"><img src="./assets/images/alphy_logo.png"
-              alt="Logo for Alphy tours and travels" width="847" height="294"></a>
+        <div class="logo-wrap">
+          <a href="https://alphytoursandtravels.com/">
+            <div class="globe-wrap">
+              <svg id="globe" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path d="M53.85 47.85A27 27 0 0 1 24 57.8V56l3-3v-4l4-4v-3l4 4h5l2-2h8z"/><path d="M42 20.59v2.56L38.07 27H31l-5.36 5.26L31 37.51v5.06L27.44 39h-4.58L16 32.11V24.2L11.8 20h-4A27 27 0 0 1 32 5a26.55 26.55 0 0 1 7.06.94L36 9h-6v4l4 4h4.33z"/><path d="M32 60a28 28 0 1 1 28-28 28 28 0 0 1-28 28zm0-54a26 26 0 1 0 26 26A26 26 0 0 0 32 6z"/></svg>
+            </div>
+            <div class="logo-content">
+              <p class="bold">ALPHY</p> 
+              <p>Tours and Travels</p>
+            </div>
+          </a>
         </div>
       </div>
       <div class="right-wrap">
