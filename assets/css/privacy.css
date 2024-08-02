@@ -9,43 +9,12 @@ header nav .logo-wrap {
   max-width: 260px;
   padding: 12px 0 0 0;
 }
-.logo-wrap a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.globe-wrap {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.globe-svg {
-  fill: #529471;
-  transform-origin: 50% 50%;
-  animation: rotate 10s linear infinite;
-}
-.logo-content {
-  border-left: 3px solid #529471;
-}
-.logo-content .bold {
-  font-family: "poppins-bold", Arial, Helvetica, sans-serif;
-  font-weight: 700;
-  font-size: 2.8rem;
-  line-height: 1.2;
-  margin-bottom: 10px;
-  color: #529471;
-}
-.logo-content p {
-  font-size: 1.8rem;
-  line-height: 1.2;
-  color: #529471;
-  font-family: "poppins-bold", Arial, Helvetica, sans-serif;
-  font-weight: 700;
-  padding: 0 0 0 10px;
-}
+.logo-wrap a{display: flex;align-items: center;justify-content: center;}
+.globe-wrap{width: 80px;height: 80px;border-radius: 50%;display: flex;align-items: center;justify-content: center;}
+#globe { fill: #529471; transform-origin: 50% 50%; animation: rotate 10s linear infinite; } 
+.logo-content{border-left: 3px solid #529471;} 
+.logo-content .bold{font-family: "poppins-bold", Arial, Helvetica, sans-serif; font-weight: 700; font-size: 2.8rem; line-height: 1.2;margin-bottom: 10px;color: #529471;} 
+.logo-content p{font-size: 1.8rem; line-height: 1.2;color: #529471;font-family: "poppins-bold", Arial, Helvetica, sans-serif; font-weight: 700;padding: 0 0 0 10px;}
 
 @keyframes rotate {
   from {
