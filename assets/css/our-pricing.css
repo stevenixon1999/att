@@ -87,6 +87,7 @@ header nav {
     
      @media only screen and (max-width: 767px) {
       .faq-wrapper .heading{margin: 0 0 30px 0;}
+      .desc-wrap ol li span{line-height: 32px;}
     }
   
   
